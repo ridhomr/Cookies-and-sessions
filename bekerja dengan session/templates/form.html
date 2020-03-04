@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>contoh session</title>
+    </head>
+    <body>
+        <h2>contoh session</h2>
+        {% if msg %}
+            <p style="color:red">{{ msg }}</p>
+        {% endif %}
+        <form acrion="{{ url_for('login') }}" method="post">
+        Username : <br />
+        <input type="text" name="username" /><br />
+        Password : <br />
+        <input type="password" name="password" /><br />
+        <p> <input type="submit" value="Login" /></p>
+        </form>
+    </body>
+    </html>
